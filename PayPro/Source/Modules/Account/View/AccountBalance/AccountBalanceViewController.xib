@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountBalanceViewController" customModule="PayPro" customModuleProvider="target">
+            <connections>
+                <outlet property="balanceAndTransactionSegmentedControl" destination="QtV-28-aax" id="8vf-ll-WI1"/>
+                <outlet property="balanceSearchBar" destination="MEG-kb-4Gh" id="UpN-C4-Dvf"/>
+                <outlet property="balanceStackView" destination="zem-Cg-txF" id="oXA-sm-LgW"/>
+                <outlet property="balanceTableView" destination="EBI-R0-bUG" id="ukN-4x-pDe"/>
+                <outlet property="bottomConstraint" destination="fJh-AA-D6N" id="6Wy-y6-x36"/>
+                <outlet property="searchDisplayController" destination="BzD-kM-azN" id="0Nz-CO-qvG"/>
+                <outlet property="topConstraint" destination="x34-hf-mGX" id="jqp-Wv-eqX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="BNl-7I-yTB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QtV-28-aax">
+                    <rect key="frame" x="20" y="36" width="374" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="sP2-ys-ap6"/>
+                    </constraints>
+                    <segments>
+                        <segment title=""/>
+                        <segment title=""/>
+                    </segments>
+                    <color key="tintColor" red="0.50588235294117645" green="0.56470588235294117" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </segmentedControl>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zem-Cg-txF">
+                    <rect key="frame" x="0.0" y="80" width="414" height="656"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" searchBarStyle="minimal" text="" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-kb-4Gh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                        </searchBar>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EBI-R0-bUG">
+                            <rect key="frame" x="0.0" y="56" width="414" height="600"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="EBI-R0-bUG" firstAttribute="top" secondItem="MEG-kb-4Gh" secondAttribute="bottom" id="MSM-Ma-4Ce"/>
+                        <constraint firstAttribute="trailing" secondItem="MEG-kb-4Gh" secondAttribute="trailing" id="Nw2-al-bha"/>
+                        <constraint firstItem="MEG-kb-4Gh" firstAttribute="leading" secondItem="zem-Cg-txF" secondAttribute="leading" id="SWr-J5-A0l"/>
+                        <constraint firstAttribute="bottom" secondItem="EBI-R0-bUG" secondAttribute="bottom" id="fJh-AA-D6N"/>
+                        <constraint firstItem="MEG-kb-4Gh" firstAttribute="top" secondItem="zem-Cg-txF" secondAttribute="top" id="lgL-J3-bUa"/>
+                        <constraint firstItem="EBI-R0-bUG" firstAttribute="leading" secondItem="zem-Cg-txF" secondAttribute="leading" id="vbn-D0-WaI"/>
+                        <constraint firstAttribute="trailing" secondItem="EBI-R0-bUG" secondAttribute="trailing" id="was-x8-hM2"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zem-Cg-txF" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6l4-TW-O0Y"/>
+                <constraint firstItem="zem-Cg-txF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Ne-QP-sFm"/>
+                <constraint firstItem="QtV-28-aax" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="MJO-wk-wkv"/>
+                <constraint firstItem="zem-Cg-txF" firstAttribute="top" secondItem="QtV-28-aax" secondAttribute="bottom" constant="16" id="PU3-i5-sAq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QtV-28-aax" secondAttribute="trailing" constant="20" id="Q7t-BZ-eKG"/>
+                <constraint firstItem="zem-Cg-txF" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gtp-mb-gIo"/>
+                <constraint firstItem="QtV-28-aax" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="x34-hf-mGX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="143.47826086956522"/>
+        </view>
+        <searchDisplayController id="65J-ec-W0x">
+            <connections>
+                <outlet property="delegate" destination="-1" id="Vnq-V9-jB6"/>
+                <outlet property="searchContentsController" destination="-1" id="4Y4-Pl-76l"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="jHi-El-yBh"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="ER6-h6-RTM"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="BzD-kM-azN">
+            <connections>
+                <outlet property="delegate" destination="-1" id="alw-xV-4Nx"/>
+                <outlet property="searchContentsController" destination="-1" id="nrv-Ra-h1c"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="rFl-iF-Itu"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="2bZ-va-LqM"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+</document>

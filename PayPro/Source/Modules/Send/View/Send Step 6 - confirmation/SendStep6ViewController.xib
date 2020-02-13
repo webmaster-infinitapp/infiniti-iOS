@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendStep6ViewController" customModule="Infinit" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="hZM-zv-C6H" id="52O-E3-3rc"/>
+                <outlet property="infoLabel" destination="R3C-5B-XeH" id="YUu-Lc-aWq"/>
+                <outlet property="transactionSubmitedView" destination="Sew-sA-kvz" id="LDr-fX-QXy"/>
+                <outlet property="transactionSubmitedViewCuantityLabel" destination="VAN-f0-7Pe" id="BTm-A8-JW8"/>
+                <outlet property="transactionSubmitedViewInfoLabel" destination="NP5-fl-TFt" id="Azs-ed-FyM"/>
+                <outlet property="transactionSubmitedViewYouRockLabel" destination="pZy-Ol-1dD" id="F0Z-PN-ED4"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bb0-lQ-xF9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are processing the payment request. Please, wait until confirmation." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3C-5B-XeH">
+                    <rect key="frame" x="70" y="380.5" width="235" height="47"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.56470588235294117" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hZM-zv-C6H" customClass="UIActivityIndicatorViewStyleWhiteLarge">
+                    <rect key="frame" x="160.5" y="306.5" width="54" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="S8m-us-hM2"/>
+                        <constraint firstAttribute="width" constant="54" id="TYN-xt-tti"/>
+                    </constraints>
+                </activityIndicatorView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sew-sA-kvz" userLabel="Transaction Submited View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Rock!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZy-Ol-1dD">
+                            <rect key="frame" x="157.5" y="297" width="60.5" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.53 ETH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAN-f0-7Pe">
+                            <rect key="frame" x="150" y="323" width="75.5" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP5-fl-TFt">
+                            <rect key="frame" x="100" y="359" width="175" height="31.5"/>
+                            <string key="text">Transaction request
+submitted</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.73333333333333328" green="0.0078431372549019607" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="VAN-f0-7Pe" firstAttribute="top" secondItem="pZy-Ol-1dD" secondAttribute="bottom" constant="10" id="4jx-6k-xve"/>
+                        <constraint firstItem="NP5-fl-TFt" firstAttribute="leading" secondItem="Sew-sA-kvz" secondAttribute="leading" constant="100" id="5er-ZP-WnD"/>
+                        <constraint firstItem="VAN-f0-7Pe" firstAttribute="centerX" secondItem="Sew-sA-kvz" secondAttribute="centerX" id="6GC-Nh-yfZ"/>
+                        <constraint firstItem="pZy-Ol-1dD" firstAttribute="centerX" secondItem="Sew-sA-kvz" secondAttribute="centerX" id="HcG-kT-YXW"/>
+                        <constraint firstItem="NP5-fl-TFt" firstAttribute="centerX" secondItem="Sew-sA-kvz" secondAttribute="centerX" id="Ynd-GW-yxi"/>
+                        <constraint firstItem="NP5-fl-TFt" firstAttribute="top" secondItem="VAN-f0-7Pe" secondAttribute="bottom" constant="15" id="ZPm-8h-3so"/>
+                        <constraint firstAttribute="trailing" secondItem="NP5-fl-TFt" secondAttribute="trailing" constant="100" id="jEh-oc-iFu"/>
+                        <constraint firstItem="VAN-f0-7Pe" firstAttribute="centerY" secondItem="Sew-sA-kvz" secondAttribute="centerY" id="rYI-OK-kd2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hZM-zv-C6H" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2BK-xW-H5a"/>
+                <constraint firstItem="Sew-sA-kvz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2dS-yD-Pfs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="R3C-5B-XeH" secondAttribute="trailing" constant="70" id="OY6-QR-EBS"/>
+                <constraint firstItem="Sew-sA-kvz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UAQ-tu-nhx"/>
+                <constraint firstItem="R3C-5B-XeH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="70" id="UDh-Yd-wYF"/>
+                <constraint firstAttribute="bottom" secondItem="Sew-sA-kvz" secondAttribute="bottom" id="b4l-aG-oFS"/>
+                <constraint firstItem="hZM-zv-C6H" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cZd-xG-aWD"/>
+                <constraint firstAttribute="trailing" secondItem="Sew-sA-kvz" secondAttribute="trailing" id="jIE-eO-E3t"/>
+                <constraint firstItem="R3C-5B-XeH" firstAttribute="top" secondItem="hZM-zv-C6H" secondAttribute="bottom" constant="20" id="vgK-Xg-q4c"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

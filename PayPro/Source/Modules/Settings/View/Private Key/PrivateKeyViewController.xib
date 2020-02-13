@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrivateKeyViewController" customModule="PayPro" customModuleProvider="target">
+            <connections>
+                <outlet property="cautionLabel" destination="FG4-G6-7Nu" id="YvE-32-vaH"/>
+                <outlet property="confirmPasswordButton" destination="koY-p4-nhp" id="rpj-yk-qb1"/>
+                <outlet property="confirmPasswordView" destination="74d-4B-zke" id="aDs-xh-4V9"/>
+                <outlet property="passwordView" destination="XEP-CP-Mcx" id="gqA-aU-AkB"/>
+                <outlet property="privateKeyCodeLabel" destination="oii-ch-Wyi" id="EmH-aG-gei"/>
+                <outlet property="privateKeyLabel" destination="y5f-RB-DsX" id="Fed-3c-V3f"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8LP-5a-sga"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45w-Ux-OjJ" userLabel="Background View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your private key:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5f-RB-DsX">
+                            <rect key="frame" x="15" y="40" width="134" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.27843137254901962" green="0.32156862745098036" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zD8-Zu-Z7m" userLabel="Code View">
+                            <rect key="frame" x="0.0" y="81" width="375" height="84.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3a1076bf45ab87712ad64ccb3b10217737f7faacbf2872e88fdd9a537d8fe266" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oii-ch-Wyi">
+                                    <rect key="frame" x="30" y="10" width="315" height="64.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="0.2784313725" green="0.32156862749999998" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="oii-ch-Wyi" firstAttribute="top" secondItem="zD8-Zu-Z7m" secondAttribute="top" constant="10" id="53e-S4-dyF"/>
+                                <constraint firstItem="oii-ch-Wyi" firstAttribute="leading" secondItem="zD8-Zu-Z7m" secondAttribute="leading" constant="30" id="OP1-Pc-kAc"/>
+                                <constraint firstAttribute="bottom" secondItem="oii-ch-Wyi" secondAttribute="bottom" constant="10" id="cH5-cd-Wau"/>
+                                <constraint firstAttribute="trailing" secondItem="oii-ch-Wyi" secondAttribute="trailing" constant="30" id="mrd-zm-j09"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAUTION: Do never share your Private Key with anyone. Keep it always in a safe place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FG4-G6-7Nu">
+                            <rect key="frame" x="15" y="185.5" width="345" height="31.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.50588235294117645" green="0.56470588235294117" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74d-4B-zke" userLabel="Confirm Password View">
+                            <rect key="frame" x="0.0" y="21" width="375" height="646"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-P4-LY0" userLabel="Screen Pressed Button">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="onScreenPassword:" destination="-1" eventType="touchUpInside" id="QaL-IB-LLE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koY-p4-nhp">
+                                    <rect key="frame" x="98.5" y="306.5" width="178" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <state key="normal" title="Confirm your password">
+                                        <color key="titleColor" red="0.50588235294117645" green="0.56470588235294117" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didConfirmButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="zZ8-Yk-zhq"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUa-OT-L13" userLabel="Constraints View">
+                                    <rect key="frame" x="0.0" y="0.0" width="3" height="339.5"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="3" id="yrj-n9-R3Z"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XEP-CP-Mcx" customClass="PasswordView" customModule="PayPro" customModuleProvider="target">
+                                    <rect key="frame" x="63.5" y="193.5" width="248" height="33"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="248" id="Hg2-qt-CzW"/>
+                                        <constraint firstAttribute="height" constant="33" id="J32-R3-dGL"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="digits">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="koY-p4-nhp" firstAttribute="centerY" secondItem="74d-4B-zke" secondAttribute="centerY" id="CWO-kn-xtm"/>
+                                <constraint firstItem="koY-p4-nhp" firstAttribute="top" secondItem="XEP-CP-Mcx" secondAttribute="bottom" constant="80" id="PMI-7e-3Eh"/>
+                                <constraint firstItem="koY-p4-nhp" firstAttribute="centerX" secondItem="74d-4B-zke" secondAttribute="centerX" id="PVZ-Tf-5Mt"/>
+                                <constraint firstItem="uUa-OT-L13" firstAttribute="top" secondItem="74d-4B-zke" secondAttribute="top" id="RcG-lN-Fnz"/>
+                                <constraint firstItem="uUa-OT-L13" firstAttribute="leading" secondItem="74d-4B-zke" secondAttribute="leading" id="jdk-Zn-Yyq"/>
+                                <constraint firstItem="koY-p4-nhp" firstAttribute="bottom" secondItem="uUa-OT-L13" secondAttribute="bottom" id="kbJ-4L-1br"/>
+                                <constraint firstItem="XEP-CP-Mcx" firstAttribute="centerX" secondItem="74d-4B-zke" secondAttribute="centerX" id="ncm-Ar-bsA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="zD8-Zu-Z7m" firstAttribute="leading" secondItem="v1e-QO-yVH" secondAttribute="leading" id="5vr-fS-F8D"/>
+                        <constraint firstItem="74d-4B-zke" firstAttribute="leading" secondItem="v1e-QO-yVH" secondAttribute="leading" id="GhJ-bC-Afb"/>
+                        <constraint firstItem="FG4-G6-7Nu" firstAttribute="leading" secondItem="v1e-QO-yVH" secondAttribute="leading" constant="15" id="If8-s9-MZ3"/>
+                        <constraint firstItem="74d-4B-zke" firstAttribute="trailing" secondItem="v1e-QO-yVH" secondAttribute="trailing" id="O5Q-Ix-ygZ"/>
+                        <constraint firstItem="74d-4B-zke" firstAttribute="bottom" secondItem="v1e-QO-yVH" secondAttribute="bottom" id="QmH-tg-dcH"/>
+                        <constraint firstItem="v1e-QO-yVH" firstAttribute="trailing" secondItem="FG4-G6-7Nu" secondAttribute="trailing" constant="15" id="SZP-hH-iUP"/>
+                        <constraint firstItem="FG4-G6-7Nu" firstAttribute="top" secondItem="zD8-Zu-Z7m" secondAttribute="bottom" constant="20" id="bE1-54-UXo"/>
+                        <constraint firstItem="zD8-Zu-Z7m" firstAttribute="top" secondItem="y5f-RB-DsX" secondAttribute="bottom" constant="20" id="gac-Ek-isB"/>
+                        <constraint firstItem="74d-4B-zke" firstAttribute="top" secondItem="v1e-QO-yVH" secondAttribute="top" constant="1" id="kU2-dk-StG"/>
+                        <constraint firstItem="v1e-QO-yVH" firstAttribute="trailing" secondItem="zD8-Zu-Z7m" secondAttribute="trailing" id="vCH-Ve-gbe"/>
+                        <constraint firstItem="y5f-RB-DsX" firstAttribute="leading" secondItem="v1e-QO-yVH" secondAttribute="leading" constant="15" id="xIO-fV-x5p"/>
+                        <constraint firstItem="y5f-RB-DsX" firstAttribute="top" secondItem="v1e-QO-yVH" secondAttribute="top" constant="20" id="xUu-tZ-lfV"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="v1e-QO-yVH"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="45w-Ux-OjJ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7Bh-Uy-XII"/>
+                <constraint firstItem="45w-Ux-OjJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MXD-6x-Qpb"/>
+                <constraint firstItem="45w-Ux-OjJ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="pS6-YD-syr"/>
+                <constraint firstItem="45w-Ux-OjJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xv0-Js-7dK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.399999999999999" y="52.623688155922046"/>
+        </view>
+    </objects>
+</document>

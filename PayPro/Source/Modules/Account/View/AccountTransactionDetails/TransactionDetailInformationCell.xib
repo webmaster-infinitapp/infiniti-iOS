@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionDetailsViewController" customModule="PayPro" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionDetailInformationCell" id="i8e-hX-gaO" customClass="TransactionDetailInformationCell" customModule="PayPro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i8e-hX-gaO" id="pbI-5g-LpO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yEP-dj-cQf">
+                        <rect key="frame" x="16" y="22" width="343" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="yEP-dj-cQf" secondAttribute="trailing" id="7R1-u4-WKy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yEP-dj-cQf" secondAttribute="bottom" constant="1" id="Q5z-j2-Zlz"/>
+                    <constraint firstItem="yEP-dj-cQf" firstAttribute="centerY" secondItem="pbI-5g-LpO" secondAttribute="centerY" id="kec-qr-wch"/>
+                    <constraint firstItem="yEP-dj-cQf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pbI-5g-LpO" secondAttribute="top" constant="1" id="qW0-lr-bUo"/>
+                    <constraint firstItem="yEP-dj-cQf" firstAttribute="leading" secondItem="pbI-5g-LpO" secondAttribute="leadingMargin" id="vRw-eh-UBE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="informationLabel" destination="yEP-dj-cQf" id="Rqv-Mk-MDS"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="-23.388305847076463"/>
+        </tableViewCell>
+    </objects>
+</document>

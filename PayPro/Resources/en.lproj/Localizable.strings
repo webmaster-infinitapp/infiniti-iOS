@@ -1,0 +1,249 @@
+/* 
+  Localizable.strings
+  Infinit
+
+  Created by Infinit on 28/6/18.
+  Copyright © 2018 Infinit. All rights reserved.
+*/
+
+/**     GENERAL     **/
+
+"general.backButton" = "Back";
+"general.nextButton" = "Next";
+"general.doneButton" = "Done";
+"general.copyToClipboard" = "Copied to clipboard";
+"general.error" = "There has been an error. Please, try again";
+"general.conectivityError" = "Please, check your Internet conection";
+"register.sessionExpiredTitle" = "Expired session";
+"general.sessionExpiredError" = "Your session has expired. Please, log in again";
+
+/**     PASSWORD ERRORS     **/
+
+"password.fieldsNotFilled.errorDescription" = "Please, ensure that all the fields are dully filled";
+"password.notMatching.ErrorDescription" = "Passwords do not match";
+"password.onlyNumbers.ErrorDescription" = "Passwords can only contain numbers. Try again with a different one";
+
+/**     REGISTER MODULE     **/
+
+"register.title" = "Sign up";
+"register.nameLabel" = "Name";
+"register.countryCodeLabel" = "Telephone country code";
+"register.telephoneNumberLabel" = "Telephone number";
+"register.createAccountButton" = "Create your account";
+"register.agreeTermsLabel" = "By creating an account, you agree to our";
+"register.agreeTermsButton" = "Terms";
+"register.haveAccountLabel" = "Already have an account?";
+"register.haveAccountButton" = "Sign in";
+"register.registerErrorTitle" = "Try again";
+"register.registerErrorDescription.invalidCountryCode" = "Please, ensure you have started your Telephone country code by writing a +";
+"register.registerErrorDescription.invalidTelephoneNumber" = "Please, make sure your Telephone Number only contains numbers";
+"register.registerErrorDescription.emptyUsername" = "Please, ensure you have filled in your username";
+"register.otpErrorDescription" = "The SMS code does not match";
+"register.registerErrorCancelButton" = "Cancel";
+"register.registerErrorOkButton" = "OK";
+"register.notoken" = "No token available";
+
+"otp.hint" = "We have sent you an SMS message. Please type the confirmation number shown.";
+"passwordStep1.createNewPasswordButton.text" = "Create new password";
+"passwordStep2.confirmNewPasswordButton.text" = "Confirm new password";
+
+/**     LOGIN MODULE     **/
+
+"login.backButton" = "Register";
+"login.loginButton" = "Log in";
+"login.signInTitle" = "Log in";
+"login.switchAccount" = "Switch Account";
+"login.agreeTermsLabel" = "By logging into an account, you agree to our";
+"login.loginErrorDescription" = "Login is incorrect";
+"login.username.tip" = "Type here your user name";
+"login.userBlockedError" = "This user has been blocked";
+"login.credentialsError" = "The user ID you entered could not be found or your password was incorrect. Please try again";
+
+/**     SEND MODULE     **/
+
+"send.tabBarTitle" = "Send";
+
+"send.step1.title" = "Beneficiary";
+"send.step1.searchBarPlaceholder" = "Search";
+"send.step1.notInContactsButton" = "Not in my contact list";
+"send.step1.allowAccessToContactsAlertMessage" = "Infinit requires your permission to access your contacts in order to list them.";
+"send.step1.allowAccessToContactsCancelButton" = "Cancel";
+"send.step1.allowAccessToContactsSettingsButton" = "Settings";
+"send.step1.checkContactsErrorMessage" = "We are sorry, but we couldn't retrieve your contacts.";
+"send.step1.checkContactsErrorOkButton" = "OK";
+
+"send.step2.title" = "Address";
+"send.step2.setAddressManuallyLabel" = "Set address manually";
+"send.step2.scanQRCodeLabel" = "Scan QR Code";
+"send.step2.infoLabel" = "Type wallet public address";
+"send.step2.errorDescription.textFieldsNotFilled" = "The public address of the wallet does not look right :(";
+"send.step2.errorDescription.title" = "Wallet not valid";
+"send.step2.ErrorOkButton" = "OK";
+
+"send.step2QRScanner.title" = "Scan QR Code";
+"send.step2QRScanner.cameraNotAvailable" = "We are sorry, but your camera is not available.";
+"send.step2QRScanner.allowAccessToCameraAlertMessage" = "Infinit requires your permission to access your camera in order to scan QR codes.";
+"send.step2QRScanner.allowAccessToCameraCancelButton" = "Cancel";
+"send.step2QRScanner.allowAccessToCameraSettingsButton" = "Settings";
+
+"send.step3.title" = "Amount & Asset";
+"send.step3.chooseAssetLabel" = "Choose Asset";
+"send.step3.infoLabel" = "Set amount and currency";
+"send.step3.availableBalanceLabel" = "Available balance:";
+"send.step3.errorDescription.asset&AmountError" = "You need to choose an asset and type in the amount for your transaction";
+"send.step3.errorDescription.assetError" = "You still need to choose an asset";
+"send.step3.errorDescription.amountError" = "You still need to type in the amount for your transaction";
+"send.step3.errorDescription.notEnoughAvailableAmount" = "You don't have enough of the selected asset";
+"send.step3.errorDescription.amountFormatError" = "Please enter a valid amount";
+"send.step3.errorDescription.title" = "Something went wrong";
+"send.step3.ErrorOkButton" = "OK";
+"send.step3.showTokensErrorMessage" = "We are sorry, but we couldn't retrieve your available tokens.";
+"send.step3.retryShowTokensButton" = "Retry";
+"send.step3.showTokensErrorGoBackButton" = "Go back";
+
+"send.step4.title" = "Message";
+"send.step4.infoLabel" = "Here is a message where we can put absolutely anything we want.";
+"send.step4.messageTextField.placeholder" = "Message";
+
+"send.step5.title" = "Confirm";
+"send.step5.readyTitleLabel" = "Ready to send";
+"send.step5.toTitleLabel" = "To";
+"send.step5.emptyNameText" = "Wallet Address:";
+"send.step5.infoLabel" = "Please bear in mind that all transactions in blockchain are irreversible. Double-check that all the information is correct.";
+"send.step5.transactionError" = "Transaction failed :(";
+"send.step5.transactionErrorMessage" = "For some reason the transaction request did not go through";
+"send.step5.retryTransactionButton" = "Retry";
+"send.step5.transactionErrorOkButton" = "OK";
+
+"send.step6.title" = "Confirm";
+"send.step6.infoLabel" = "We are processing the payment request. Please, wait until confirmation.";
+"send.step6.transactionSubmitedViewYouRockLabel" = "You Rock!";
+"send.step6.transactionSubmitedViewInfoLabel" = "Transaction request submitted";
+
+/**    RECEIVE MODULE    **/
+
+"receive.tabBarTitle" = "Receive";
+"receive.publicAddressHeaderLabel" = "Public Address:";
+"receive.retrievePublicKeyErrorMessage" = "There was a problem retrieving your public key. Please try again later";
+"receive.retrievePublicKeyErrorOkButton" = "OK";
+
+/**     ACCOUNT MODULE     **/
+
+"account.title" = "Account";
+"account.tabBarTitle" = "Account";
+"account.segmentedControl.balance" = "Balance";
+"account.segmentedControl.transactionHistory" = "Transaction History";
+
+"account.balance.searchBar.placeholder" = "Search";
+"account.balance.addTokenLabel" = "Add Token";
+"account.balance.ErrorTitle" = "No token is avaliable";
+"account.balance.ErrorDescription" = "There has been a problem retrieving your tokens. Please try again";
+"account.balance.ErrorOkButton" = "OK";
+
+"account.addToken.tokenDetailsLabel" = "TOKEN DETAILS";
+"account.addToken.tokenSymbolTextField.placeholder" = "Token Symbol";
+"account.addToken.tokenNameTextField.placeholder" = "Token Name";
+"account.addToken.smartContactAddressTextField.placeholder" = "Smart Contract Address";
+"account.addToken.decimalsTextField" = "Decimals";
+"account.addToken.addTokenButton" = "Add Token";
+"account.addToken.title" = "Add New Token";
+"account.addToken.ErrorTitle" = "Token not added";
+"account.addToken.ErrorDescription.textFieldsNotFilled" = "We have not been able to add the new token. Please try again with different";
+"account.addToken.ErrorDescription.notBeingAbleToAdd" = "We have not been able to add the new token";
+"account.addToken.ErrorOkButton" = "OK";
+
+"account.transactions.noMessage" = "No message";
+"account.transactions.ErrorTitle" = "Transaction history is not avaliable";
+"account.transactions.ErrorDescription" = "There has been a problem showing your transaction history. Please try again";
+"account.transactions.ErrorOkButton" = "OK";
+
+"account.transactionDetails.title" = "Transaction Details";
+"account.transactionDetails.headerCell.amountAndSymbol" = "AMOUNT & SYMBOL";
+"account.transactionDetails.headerCell.beneficiaryWalletAddress" = "BENEFICIARY WALLET ADDRESS";
+"account.transactionDetails.headerCell.message" = "MESSAGE";
+"account.transactionDetails.noMessage" = "No message";
+"account.transactionDetails.headerCell.date" = "DATE";
+"account.transactionDetails.headerCell.status" = "STATUS";
+"account.transactionDetails.headerCell.numberOfConfirmations" = "NUMBER OF CONFIRMATIONS";
+"account.transactionDetails.headerCell.gasFee" = "GAS FEE";
+"account.transactionDetails.headerCell.transactionHash" = "TRANSACTION HASH";
+"account.transactionDetails.ErrorTitle" = "Details are not available";
+"account.transactionDetails.ErrorDescription" = "There has been a problem showing the details. Please try again";
+"account.transactionDetails.ErrorOkButton" = "OK";
+
+/**     SETTINGS MODULE     **/
+
+"settings.tabBarTitle" = "Settings";
+"settings.addPhotoLabel" = "Add Photo";
+"settings.keysLabel" = "Private keys";
+"settings.passwordLabel" = "Password";
+"settings.gasPriceLabel" = "Gas Price";
+"settings.gasLimitLabel" = "Gas Limit";
+"settings.aboutUsLabel" = "About us";
+"settings.rateUs" = "Rate us";
+"settings.infoLabel" = "Info";
+"settings.logOutLabel" = "Log out";
+"settings.allowAccessToCameraAlertMessage" = "Infinit requires your permission for using your camera";
+"settings.allowAccessToPhotoGalleryAlertMessage" = "Infinit requires your permission to acces your photo library";
+"settings.allowAccessCancelButton" = "Cancel";
+"settings.allowAccessToSettingsButton" = "Settings";
+"settings.updatePhotoError" = "Your photo could not be updated";
+"settings.logOut.alertTitle" = "Log out";
+"settings.logOut.alertMessage" = "Are you sure you want to log out?";
+"settings.logOut.okButtonText" = "OK";
+"settings.logOut.cancelButtonText" = "Cancel";
+
+/**     PRIVATE KEY MODULE     **/
+
+"settings.privateKey.title" = "Private key";
+"settings.privateKey.yourPrivateKeyLabel" = "Your private key:";
+"settings.privateKey.confirmPaswwordButton" = "Confirm your password";
+"settings.privateKey.passwordError" = "Please, ensure that your password is correct";
+"settings.privateKey.cautionLabel" = "CAUTION: Do never share your Private Key with anyone. Keep it always in safe place.";
+
+/**     CHANGE PASSWORD       **/
+
+"settings.changePassword.title" = "Password";
+"settings.changePassword.createNewPasswordButton" = "Create new password";
+"settings.changePassword.confirmNewPasswordButton" = "Confirm new password";
+"settings.changePassword.numberOfDigitsError" = "Password must have 6 characters";
+"settings.changePassword.confirmNewPasswordToast" = "Your password has been succesfully changed";
+
+/**     IMPORT IMAGE        **/
+
+"importImage.SelectImage" = "Select an image.";
+"importImage.importFrom" = "Where do you want to select your profile picture from?";
+"importImage.Camera" = "Camera";
+"importImage.Gallery" = "Gallery";
+
+/**     GAS PRICE MODULE     **/
+
+"settings.gasPrice.title" = "Gas Price";
+"settings.gasPrice.infoLabel" =  "The higher you set the price for Gas, the faster the transaction will be executed. If you want to spend less on a transaction, you can do so by lowering the amount you pay per unit of gas.\n\n1,000,000,000 Gwei = 1 Ether";
+"settings.gasPrice.backButton.title" = "Save";
+
+/**     GAS LIMIT MODULE     **/
+
+"settings.gasLimit.title" = "Gas Limit";
+"settings.gasLimit.setGasLimitLabel" = "Set Gas Limit";
+"settings.gasLimit.infoLabel" =  "The gas limit is the maximum amount of units of gas you are willing to spend on a transaction. All unused gas is refunded to you at the end of a transaction.\n\n21,000 is the gas limit for standard transactions.\n\n1,000,000,000 Gwei = 1 ETH";
+"settings.gasPrice.saveButton.title" = "Save";
+"settings.gasLimit.ErrorTitle" = "Gas Limit not valid";
+"settings.gasLimit.ErrorDescription" = "Gas Limit cannot be 0. Please, set a value greater than 0";
+"settings.gasLimit.EmptyTextField" = "Please, ensure you fill the gas limit";
+"settings.gasLimit.ErrorOkButton" = "OK";
+"settings.updatePhotoError" = "Profile picture could not be changed";
+
+/**     INFO MODULE     **/
+
+"settings.info.title" = "Info";
+"settings.info.termsOfServiceLabel"= "Terms of Service";
+"settings.info.privacyPolicyLabel" = "Privacy Policy";
+"settings.info.websiteLabel" = "Website";
+
+/**    SUPPORT MODULE    **/
+
+"support.tabBarTitle" = "Support";
+"support.welcomeLabel" = "Welcome to PayPro's Support. Please tap on the button below to start a conversation with our support team.";
+"support.messengerLauncherButton" = "Open Messenger";
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GasPriceViewController" customModule="PayPro" customModuleProvider="target">
+            <connections>
+                <outlet property="gasPricePickerView" destination="80G-fO-mKf" id="mqg-qm-ucF"/>
+                <outlet property="infoLabel" destination="SRB-x0-JP7" id="HAD-rE-VmX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MwF-q7-9qF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHE-iO-7fA" userLabel="Background View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="pDz-rr-iaN"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpK-dI-WBi">
+                    <rect key="frame" x="0.0" y="22" width="375" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80G-fO-mKf">
+                    <rect key="frame" x="0.0" y="22" width="375" height="216"/>
+                </pickerView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRB-x0-JP7">
+                    <rect key="frame" x="60" y="258" width="255" height="109"/>
+                    <string key="text">The higher you set the price for Gas, the faster the transaction will be exectued. If you want to spend less on a transaction, you can do so by lowering the amount you pay per unit of gas.
+
+1,000,000,000 Gwei = 1 Either</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.50588235290000005" green="0.56470588239999997" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SRB-x0-JP7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="60" id="1VH-vB-TdX"/>
+                <constraint firstItem="QHE-iO-7fA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4IV-62-meO"/>
+                <constraint firstItem="QHE-iO-7fA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8i4-zl-llW"/>
+                <constraint firstItem="QHE-iO-7fA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BbA-aC-Mxu"/>
+                <constraint firstItem="SRB-x0-JP7" firstAttribute="top" secondItem="80G-fO-mKf" secondAttribute="bottom" constant="20" id="DwF-1A-EPL"/>
+                <constraint firstItem="80G-fO-mKf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="HgQ-Gm-Lff"/>
+                <constraint firstItem="80G-fO-mKf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OB1-Ek-jtE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SRB-x0-JP7" secondAttribute="trailing" constant="60" id="Sh4-K0-gMg"/>
+                <constraint firstItem="QHE-iO-7fA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Syn-pm-kB1"/>
+                <constraint firstItem="DpK-dI-WBi" firstAttribute="trailing" secondItem="80G-fO-mKf" secondAttribute="trailing" id="VQC-7c-TVp"/>
+                <constraint firstItem="80G-fO-mKf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="Xei-PJ-zjO"/>
+                <constraint firstItem="DpK-dI-WBi" firstAttribute="top" secondItem="80G-fO-mKf" secondAttribute="top" id="ds9-PW-tIV"/>
+                <constraint firstItem="DpK-dI-WBi" firstAttribute="leading" secondItem="80G-fO-mKf" secondAttribute="leading" id="fJJ-l3-YNe"/>
+                <constraint firstItem="DpK-dI-WBi" firstAttribute="bottom" secondItem="80G-fO-mKf" secondAttribute="bottom" id="hnA-5B-SNd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountTransactionHistoryViewController" customModule="PayPro" customModuleProvider="target">
+            <connections>
+                <outlet property="balanceAndTransactionsSegmentedControl" destination="1UM-Qi-amx" id="Tf0-zw-O9l"/>
+                <outlet property="bottomConstraint" destination="R9e-33-6as" id="OZN-5n-W1P"/>
+                <outlet property="historyTableView" destination="1Rd-Bq-wel" id="bp3-rd-Y1K"/>
+                <outlet property="topConstraint" destination="HIp-gi-ivI" id="CXo-JF-lff"/>
+                <outlet property="view" destination="iN0-l3-epB" id="IKi-Dc-jEe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="1UM-Qi-amx">
+                    <rect key="frame" x="20" y="36" width="374" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="fn0-GF-3l5"/>
+                    </constraints>
+                    <segments>
+                        <segment title=""/>
+                        <segment title=""/>
+                    </segments>
+                    <color key="tintColor" red="0.50588235290000005" green="0.56470588239999997" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Rd-Bq-wel">
+                    <rect key="frame" x="0.0" y="84" width="414" height="652"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1UM-Qi-amx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="HIp-gi-ivI"/>
+                <constraint firstItem="1Rd-Bq-wel" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JQF-g4-oUd"/>
+                <constraint firstItem="1UM-Qi-amx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="P55-ca-HwF"/>
+                <constraint firstItem="1Rd-Bq-wel" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="R9e-33-6as"/>
+                <constraint firstItem="1Rd-Bq-wel" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fAn-Bh-C6H"/>
+                <constraint firstItem="1Rd-Bq-wel" firstAttribute="top" secondItem="1UM-Qi-amx" secondAttribute="bottom" constant="20" id="uNB-5s-N63"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1UM-Qi-amx" secondAttribute="trailing" constant="20" id="wjd-Gu-Mk6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="95.652173913043484" y="159.78260869565219"/>
+        </view>
+    </objects>
+</document>

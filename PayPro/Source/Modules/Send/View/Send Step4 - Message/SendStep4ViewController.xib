@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendStep4ViewController" customModule="PayPro" customModuleProvider="target">
+            <connections>
+                <outlet property="infoLabel" destination="zCg-wZ-w7k" id="6HP-Pj-EQC"/>
+                <outlet property="messageTextField" destination="6R7-nQ-UuR" id="M4j-0c-OAo"/>
+                <outlet property="topConstraint" destination="XPl-5k-Kxk" id="EUf-mq-I62"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Vxm-d9-maU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-nQ-UuR">
+                    <rect key="frame" x="20" y="70" width="335" height="17"/>
+                    <color key="textColor" red="0.72549019609999998" green="0.81176470590000005" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ch-G0-kjs" userLabel="Underline View">
+                    <rect key="frame" x="20" y="89" width="335" height="1"/>
+                    <color key="backgroundColor" red="0.58823529411764708" green="0.62352941176470589" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WFn-O0-Loz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is a message where we can put absolutely anything we want" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCg-wZ-w7k">
+                    <rect key="frame" x="20" y="100" width="285" height="31.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.58823529409999997" green="0.62352941179999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zCg-wZ-w7k" firstAttribute="leading" secondItem="6R7-nQ-UuR" secondAttribute="leading" id="2uh-7C-2LS"/>
+                <constraint firstItem="9Ch-G0-kjs" firstAttribute="top" secondItem="6R7-nQ-UuR" secondAttribute="bottom" constant="2" id="2yW-Ex-N6H"/>
+                <constraint firstItem="9Ch-G0-kjs" firstAttribute="width" secondItem="6R7-nQ-UuR" secondAttribute="width" id="8EX-F3-uOC"/>
+                <constraint firstItem="6R7-nQ-UuR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="XPl-5k-Kxk"/>
+                <constraint firstItem="zCg-wZ-w7k" firstAttribute="trailing" secondItem="6R7-nQ-UuR" secondAttribute="trailing" constant="-50" id="a1O-Eh-SY1"/>
+                <constraint firstItem="9Ch-G0-kjs" firstAttribute="centerX" secondItem="6R7-nQ-UuR" secondAttribute="centerX" id="adt-Q1-c7h"/>
+                <constraint firstItem="6R7-nQ-UuR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="dKt-p8-C3v"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6R7-nQ-UuR" secondAttribute="trailing" constant="20" id="dlg-0s-qMt"/>
+                <constraint firstItem="zCg-wZ-w7k" firstAttribute="top" secondItem="9Ch-G0-kjs" secondAttribute="bottom" constant="10" id="tmL-Ha-T9j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

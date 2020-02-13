@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Intercom (5.2.1)
+  - SwiftLint (0.30.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Intercom
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Intercom
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Intercom: 53f07c24f0ca18c1e910750e79b75f9c9867338f
+  SwiftLint: a54bf1fe12b55c68560eb2a7689dfc81458508f7
+
+PODFILE CHECKSUM: ffa01ad5fa07673005d4be99acef8fe790fa85e0
+
+COCOAPODS: 1.8.3
